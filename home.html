@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-list>
+      <ion-row>
+        <ion-item>
+          <ion-label for="topic">Topic</ion-label>
+          <ion-input type="text" name="topic" id="" placeholder="Enter Topic"></ion-input>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label for="StartDate">Start Date</ion-label>
+          <ion-datetime displayFormat="DD/MMM/YY" max="2020-10-31" pickerFormat="DDDD MMMM YYYY" [(ngModel)]="startdate"></ion-datetime>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label for="StartTime">Start Time</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="starttime"></ion-datetime>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label for="StartTime">End Date</ion-label>
+          <ion-datetime displayFormat="DD/MMM/YY" max="2020-10-31" pickerFormat="DDDD MMMM YYYY" [(ngModel)]="enddate"></ion-datetime>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item>
+          <ion-label for="EndTime">End Time</ion-label>
+          <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="endtime"></ion-datetime>
+        </ion-item>
+      </ion-row>
+    </ion-list>
+    <ion-row>
+      <button (click)="display()">
+        Next
+      </button>
+    </ion-row>
+  </ion-grid>
+</ion-content>
